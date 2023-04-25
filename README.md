@@ -14,4 +14,4 @@ This function retrieves the process IDs and names of processes currently running
 The Calculate Bandwidth function can calculate the bandwidth usage for a single process or multiple processes running over a desired time frame. It can calculate bandwidth usage on a second-by-second basis or over a longer time period. It is important to note that the accuracy of the bandwidth calculation may be subject to error and improvements are currently being made.
 
 ## Requirements
-NetworkHelper requires the psutil library, specifically version 5.9.5.
+psutil==5.9.5
