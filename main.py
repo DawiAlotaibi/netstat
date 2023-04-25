@@ -7,17 +7,10 @@ nw_helper = NetworkHelper.NetWorkHelper()
 #     print(f"Process {v} PID {k}")
 
 if len(sys.argv) <= 1:
-    #print(nw_helper.getProcesses())
-    # print(nw_helper.getNameById(5540))
-    print(nw_helper.getBandwidthById(20128,interval=15,args=["-b"],elapsed=True))
-    #print(nw_helper.getAllBandwidth(interval=1,print_output=False))
     # print(nw_helper.getProcesses(args=["-n","-pid"]))
-    #
+    print(nw_helper.getNameById("7332"))
+    print(nw_helper.getBandwidthById("7332"))
 else:  # just add args later
     for arg in sys.argv[1:]:
         print(arg)
-
-
-
-
-
+nw_helper.getNames()
